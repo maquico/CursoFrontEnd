@@ -1,0 +1,23 @@
+h1{
+    color: #f07167;
+}
+
+a:link{
+    color: #fb8500; /*para elementos que no han sido visitados*/
+    text-decoration: none; /*quitar subrayado*/
+}
+
+a:visited{
+    color: #219ebc; /*para elementos que ya han sido visitados*/
+    text-decoration: none; /*quitar subrayado*/
+}
+
+a:hover{
+    color: #8ecae6; /*para elementos que estan siendo apuntados*/
+    text-decoration: underline; 
+}
+
+a:active{
+    color: #023047; /*para elementos que estan siendo apuntados*/
+    text-decoration: underline;/
+}  
