@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form action="mi_servidor" method="POST" target="_blank" autocomplete="off">
+        <fieldset>
+            <legend>Datos persona</legend>
+
+            <label for="txt_id">ID: </label> <br>
+            <input type="text" id="txt_id" name="idPersona" 
+            placeholder="Escribe tus ID" required="true" readonly="true"
+            value="1104666">
+            <br> <br>
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+ 
+            <label for="txt_nombres">Nombres: </label> <br>
+            <input type="text" id="txt_nombres" name="nombres" 
+            placeholder="Escribe tus nombres" required="true">
+            <br> <br>
+
+            <label for="txt_apellidos">Apellidos: </label><br>
+            <input type="text" id="txt_apellidos" name="apellidos"
+            placeholder="Escribe tus apellidos" required="true">
+            <br> <br>
+
+            <label for="txt_password">Contraseña: </label><br>
+            <input type="password" id="txt_password" name="password"
+            required="true">
+            <br> <br>
+
+            <label for="txt_email">Email: </label><br>
+            <input type="email" id="txt_email" name="email"
+            required="true">
+            <br> <br>
+
+            <label for="txt_edad">Edad: </label><br>
+            <input type="number" id="txt_edad" name="edad"
+            required="true" step="any">
+            <br> <br>
+
+            <label>Género </label>
+            <br>
+            <input type="radio" id="rbtn_femenino" name="genero"
+            required="true" value="femenino">
+            <label for="rbtn_femenino">Femenino</label>
+            <br>
+            <input type="radio" id="rbtn_masculino" name="genero"
+            required="true" value="masculino">
+            <label for="rbtn_masculino">Masculino</label>
+            <br> <br>
+
+            <label>Género de Música Favorito</label>
+            <br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica" >
+            <label for="clasica">Clasica</label>
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">Jazz</label>
+            <input type="checkbox" id="rock" name="musica" value="rock" >
+            <label for="rock">Rock</label>
+            <br> <br>
+        
+            <label for="autos">Marca auto favorita:</label></br>
+            <select id="autos" name="autos" multiple="true">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="fiat" selected>Fiat</option>
+            </select>
+            <br> <br>
+
+            <label for="comentario">Comentario:</label></br>
+            <textarea id="comentario" name="comentario" rows="2" cols="30">
+                Escribe tu comentario
+            </textarea>
+            <br> <br>
+            <input type="submit" id="btn_enviar" value="Enviar">
+            <input type="submit" id="btn_enviar2" value="Enviar sin validar" formnovalidate="true">
+            <input type="reset" value="Restablecer">
+        </fieldset>
+    </form>
+</body>
+</html>
